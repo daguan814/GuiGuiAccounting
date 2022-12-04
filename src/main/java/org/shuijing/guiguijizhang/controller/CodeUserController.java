@@ -1,6 +1,7 @@
 package org.shuijing.guiguijizhang.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+
 import lombok.extern.slf4j.Slf4j;
 import org.shuijing.guiguijizhang.common.Result;
 import org.shuijing.guiguijizhang.pojo.CodeUser;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
+
 
 /**
  * <p>
@@ -30,8 +32,8 @@ public class CodeUserController {
     private CodeUserService codeUserService;
 
     @PostMapping("/login")
-    public Result<String> login(HttpServletRequest request, @RequestBody CodeUser codeUser) {
-        String iemi = codeUser.getIemi();
+    public Result<String> login(@RequestBody CodeUser codeUser) {
+
 
         //根据页面提交的用户名查询数据库
         LambdaQueryWrapper<CodeUser> queryWrapper = new LambdaQueryWrapper<>();
@@ -48,9 +50,8 @@ public class CodeUserController {
     }
 
     @PostMapping("/jihuo")
-    public Result<String> jihuo(HttpServletRequest request, @RequestBody CodeUser codeUser) {
-        String iemi = codeUser.getIemi();
-        String pwdcode = codeUser.getPwdcode();
+    public Result<String> jihuo( @RequestBody CodeUser codeUser) {
+
         //根据页面提交的用户名查询数据库
         LambdaQueryWrapper<CodeUser> queryWrapper = new LambdaQueryWrapper<>();
         queryWrapper.eq(CodeUser::getPwdcode, codeUser.getPwdcode());
@@ -69,7 +70,7 @@ public class CodeUserController {
     }
 
     @PostMapping("/del")
-    public Result<String> del(HttpServletRequest request, @RequestBody CodeUser codeUser) {
+    public Result<String> del( @RequestBody CodeUser codeUser) {
 
         //根据页面提交的用户名查询数据库
         LambdaQueryWrapper<CodeUser> queryWrapper = new LambdaQueryWrapper<>();

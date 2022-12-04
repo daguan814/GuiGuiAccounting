@@ -2,6 +2,7 @@ package org.shuijing.guiguijizhang.service;
 
 import org.shuijing.guiguijizhang.pojo.CodeUser;
 import com.baomidou.mybatisplus.extension.service.IService;
+import org.springframework.stereotype.Service;
 
 /**
  * <p>
@@ -11,6 +12,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author baomidou
  * @since 2022-12-01
  */
+@Service
 public interface CodeUserService extends IService<CodeUser> {
 
 }
