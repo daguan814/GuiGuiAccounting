@@ -1,0 +1,67 @@
+
+spring:   #?????
+  profiles:
+    active: dev    #????
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev   #??
+
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://106.13.2.240:3307/guigui #?servierTimezone=UTC
+    username: root
+    password: Lhf@2001.
+
+server:
+  port: 8080
+
+
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true #??MP??????????
+  global-config:
+    db-config:
+      id-type: assign_id
+
+shuijing:
+  path: ??????
+
+
+
+---
+spring:
+  config:
+    activate:
+      on-profile: pro  #??
+
+
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://??:33060/shuijing #?servierTimezone=UTC
+    username: root
+    password: ??
+server:
+  port: 8080
+
+
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true #??MP??????????
+  global-config:
+    db-config:
+      id-type: assign_id
+
+shuijing:
+  path: ~/docker-files/DishImg
+
+
+---
