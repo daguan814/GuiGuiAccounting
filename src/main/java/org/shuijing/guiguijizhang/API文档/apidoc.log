@@ -1,0 +1,36 @@
+12月 05, 2022 5:25:49 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find java src paths:  [/Users/shuijing/Documents/Code/Spring/GuiGuiAccounting/src/main/java/]
+12月 05, 2022 5:25:49 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: project type not set, try to figure out...
+12月 05, 2022 5:25:49 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start find controllers in path : /Users/shuijing/Documents/Code/Spring/GuiGuiAccounting/src/main/java/
+12月 05, 2022 5:25:49 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: find controller file : CodeUserController.java
+12月 05, 2022 5:25:49 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to parse controller file : CodeUserController.java
+12月 05, 2022 5:25:49 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: we think Map should not be an enum type
+12月 05, 2022 5:25:49 下午 io.github.yedaxia.apidocs.LogUtils warn
+警告: warning!! Cannot find java file , in java file : /Users/shuijing/Documents/Code/Spring/GuiGuiAccounting/src/main/java/org/shuijing/guiguijizhang/common/Result.java, className : Map, we cannot found more information of it, you've better to make it a JavaBean
+12月 05, 2022 5:25:49 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: we think Map should not be an enum type
+12月 05, 2022 5:25:49 下午 io.github.yedaxia.apidocs.LogUtils warn
+警告: warning!! Cannot find java file , in java file : /Users/shuijing/Documents/Code/Spring/GuiGuiAccounting/src/main/java/org/shuijing/guiguijizhang/common/Result.java, className : Map, we cannot found more information of it, you've better to make it a JavaBean
+12月 05, 2022 5:25:49 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: we think Map should not be an enum type
+12月 05, 2022 5:25:49 下午 io.github.yedaxia.apidocs.LogUtils warn
+警告: warning!! Cannot find java file , in java file : /Users/shuijing/Documents/Code/Spring/GuiGuiAccounting/src/main/java/org/shuijing/guiguijizhang/common/Result.java, className : Map, we cannot found more information of it, you've better to make it a JavaBean
+12月 05, 2022 5:25:49 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to parse controller file : CodeUserController.java
+12月 05, 2022 5:25:49 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate api docs start...
+12月 05, 2022 5:25:49 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: start to generate docs for controller file : /Users/shuijing/Documents/Code/Spring/GuiGuiAccounting/src/main/java/org/shuijing/guiguijizhang/controller/CodeUserController.java
+12月 05, 2022 5:25:49 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: success to generate docs for controller file : /Users/shuijing/Documents/Code/Spring/GuiGuiAccounting/src/main/java/org/shuijing/guiguijizhang/controller/CodeUserController.java
+12月 05, 2022 5:25:49 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate index start !!!
+12月 05, 2022 5:25:49 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate index done !!!
+12月 05, 2022 5:25:49 下午 io.github.yedaxia.apidocs.LogUtils info
+信息: info: generate api docs done !!!

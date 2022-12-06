@@ -25,10 +25,9 @@ public class Result<T> {
 
     private Map map = new HashMap(); //动态数据
 
-    public static <T> Result<T> success(String msg, T object){
+    public static <T> Result<T> success(T object){
         Result<T> result = new Result<T>();
         result.data = object;
-        result.msg = msg;
         result.code  = 200;
         return result;
     }
